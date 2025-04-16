@@ -42,6 +42,10 @@ for Re_val in Re_list:
         # Calcul de la vitesse libre U0 : U0 = (Re * mu) / (rho * D)
         U0 = Re_val * mu / (rho * D_val)
         print(f"  U0 = {U0:.4f} m/s")
+        print(f"  Re = {Re_val:.4f} m/s")
+        print(f"  Mu = {mu:.4f} m/s")
+        print(f"  U0 = {rho:.4f} m/s")
+        print(f"  D = {D_val:.4f} m/s")
         
         # Lecture du fichier CSV
         df = pd.read_csv(filepath)
